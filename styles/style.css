@@ -1,0 +1,749 @@
+body {
+	font-size: 10px;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.WebsiteBody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.NavUl_notDesktop,
+.close_menu,
+.Menu_additional,
+.NavMenu_icon,
+.NavUl_notDesktop {
+	display: none;
+}
+
+/* Formularz: Search Bar ----------------------------------------------- */
+input[type="search"],
+.btn {
+	background-color: #d4e7ef;
+	border: none;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+	border-radius: 30px;
+}
+.search_bar_form {
+	display: flex;
+	margin-right: 44px;
+}
+input[type="search"] {
+	height: 50px;
+	padding: 10px 15px;
+	color: #09181a;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	transition: 0.3s;
+	font-weight: 700;
+}
+input[type="search"]::placeholder {
+	color: #163759;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 0.9;
+	font-size: 14px;
+	padding-left: 15px;
+}
+input[type="search"]:focus::placeholder {
+	opacity: 0;
+}
+input[type="search"]:focus,
+input[type="search"]:hover {
+	background-color: #bdddea;
+}
+.btn {
+	width: 54px;
+	height: 50px;
+	transition: 0.3s;
+	padding: 12px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.btn:hover {
+	transform: scale(1.1);
+	background-color: #bdddea;
+}
+.form_on_off_2 {
+	display: none !important;
+}
+.search_bar_form {
+	width: 641px;
+}
+.btn {
+	display: block;
+}
+/*----------------------------------------------- */
+
+/* header ----------------------------------------------- */
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	background-color: #032c44;
+}
+
+.headerDiv {
+	width: 1270px;
+	height: 40px;
+	display: flex;
+	z-index: 50;
+	justify-content: space-between;
+}
+.headerDiv i {
+	font-size: 1rem;
+}
+.headerDiv a {
+	color: rgb(238, 238, 238);
+	font-size: 0.8rem;
+	align-items: center;
+	display: flex;
+}
+/*----------------------------------------------- */
+
+/* Nav ----------------------------------------------- */
+nav {
+	width: 1300px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.nav_logo_img img:hover {
+	transform: scale(1.2);
+}
+
+.NavMenu_icon {
+	display: inline-block;
+}
+.NavUl {
+	display: flex;
+}
+.NavUl li a {
+	color: #163759;
+	font-size: 1rem;
+	font-weight: 600;
+	text-shadow: 1px 3px 7px rgba(57, 59, 75, 0.099);
+	display: flex;
+	align-items: center;
+	transition: 0.3s;
+}
+.NavUl li a:hover {
+	color: #01131e;
+	text-shadow: 2px 3px 11px rgba(57, 59, 75, 0.447);
+}
+.big_I {
+	font-size: 1.4rem;
+	transition: 0.3s;
+}
+.bag-shopping_i {
+	margin-right: 44px;
+}
+.nav_logo_img img {
+	width: auto;
+	height: 85px;
+	margin-right: 44px;
+	transition: 0.3s;
+}
+.nav_logo_img img:hover {
+	transform: scale(1.1);
+}
+
+.NavUl_Desktop {
+	display: inline-flex;
+}
+.NavMenu {
+	display: flex;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* main ----------------------------------------------- */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.mainPhoto {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	background-image: url(../images/mainPhoto\ Rolex.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-y: 85px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	z-index: -50;
+	height: calc(100vh - 257px);
+}
+
+.mainPhoto::before {
+	content: "";
+	background-color: rgb(5 13 18 / 14%);
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+
+.main_photo_text {
+	font-family: "Roboto Slab", serif;
+	position: absolute;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	margin-right: 80px;
+}
+
+.main_photo_text h1 {
+	font-size: 7rem;
+	color: rgb(255, 255, 255);
+	margin-bottom: 50px;
+}
+
+.main_photo_text h2 {
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.6px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.899);
+	width: 605px;
+}
+
+.MainDiv {
+	display: flex;
+	justify-content: center;
+	width: 1300px;
+	margin-top: 140px;
+}
+
+.best_watches_band {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 400px;
+}
+
+.best_watches_band h1 {
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 70px;
+	text-shadow: 1px 2px 5px rgb(66 68 90 / 19%);
+	text-align: center;
+}
+
+.watch_band_list li a img {
+	border: 2px solid rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
+	margin: 5px 4px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: 0.2s;
+}
+
+.watch_band_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.watch_band_list li a img:hover {
+	border: 2px solid #16375955;
+	box-shadow: rgba(50, 50, 105, 0.061) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+/*----------------------------------------------- */
+@media (min-width: 1020px) {
+	.NavMenu a {
+		padding: 10px 10px 15px 10px;
+		background-color: #163759 !important;
+		font-size: 1rem;
+		font-weight: 700;
+		text-decoration: none;
+		color: transparent;
+		background: url("https://wweb.dev/resources/creative-hover-effects/wave.svg") repeat-x #fff;
+		background-position-x: 0%;
+		background-position-y: 0%;
+		background-size: auto;
+		background-clip: border-box;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-size: 200% 100%;
+		background-position-x: 0;
+		background-position-y: 2em;
+		-webkit-transition: background-position-y 0.6s ease;
+		transition: background-position-y 0.6s ease;
+		-webkit-animation: waveAnimation 4s infinite linear;
+		animation: waveAnimation 4s infinite linear;
+		animation-play-state: running;
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+		transition: 0.3s;
+	}
+
+	.NavMenu a:hover {
+		text-shadow: 2px 4px 6px rgba(66, 68, 90, 0.138);
+		background-color: #d7d7d7 !important;
+		background-position-x: 0;
+		background-position-y: 0;
+		-webkit-animation-play-state: running;
+		animation-play-state: running;
+		border-bottom: solid 1px #4284a58a;
+		border-radius: 1px;
+	}
+
+	@keyframes waveAnimation {
+		from {
+			background-position-x: 0%;
+		}
+		to {
+			background-position-x: 200%;
+		}
+	}
+}
+
+.icon_space {
+	margin-right: 15px;
+}
+
+.close_menu {
+	margin-bottom: 40px;
+}
+/*----------------------------------------------- */
+
+@media (min-width: 1020px) and (max-width: 1320px) {
+	nav {
+		width: 1000px;
+	}
+	.headerDiv {
+		width: 970px;
+	}
+	.search_bar_form {
+		width: 341px;
+	}
+	.btn,
+	.NavMenu_icon {
+		display: none;
+	}
+	.nav_logo_img img:hover {
+		transform: scale(1.1);
+	}
+	.mainPhoto {
+		background-position-y: 200px;
+		justify-content: flex-start;
+	}
+	.main_photo_text {
+		margin-left: 100px;
+	}
+
+	.main_photo_text h1 {
+		font-size: 7rem;
+	}
+
+	.main_photo_text h2 {
+		font-size: 0.9rem;
+		width: 400px;
+	}
+	.MainDiv {
+		width: 1000px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.NavMenu {
+		overflow: scroll !important;
+	}
+	nav {
+		width: 100%;
+	}
+	.form_on_off_2,
+	.NavUl_Desktop {
+		display: none !important;
+	}
+	header,
+	.header_bgc,
+	.btn {
+		display: none;
+	}
+	nav {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+	.NavUl {
+		flex-grow: 1;
+		width: auto;
+		justify-content: space-between;
+	}
+	.menu_btn {
+		margin-left: 15px !important;
+		margin-right: 20px !important;
+	}
+	.hamburger {
+		margin: 0 !important;
+	}
+	.nav_logo_img img {
+		height: 75px;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.nav_logo_img img:hover {
+		transform: scale(1.1);
+	}
+	.search_bar_form {
+		display: flex;
+		flex-grow: 1;
+		width: auto;
+		margin: 0 25px 0 25px;
+	}
+	.hamburger {
+		background: none;
+		border: none;
+		padding: 0;
+		color: #163759;
+		cursor: pointer;
+	}
+	.menuIcon {
+		font-size: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+	.menuIcon:hover {
+		transform: scale(1.2);
+	}
+	.NavMenu {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 99;
+		background-color: #001220;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		transition: 0.8s;
+		transform: translateX(100%);
+		opacity: 0;
+		box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+		background-image: url(../images/layered-waves-haikei16_9.svg);
+		background-repeat: no-repeat;
+		overflow: hidden;
+		align-content: flex-start;
+		padding-top: 20px;
+		background-position-y: bottom;
+		background-size: 120%;
+		transition-timing-function: cubic-bezier(1, -0.27, 0.63, 1.01);
+	}
+	.showMenu {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	.NavMenu a {
+		color: #d4e7ef;
+		padding: 20px;
+		font-size: 1.5rem;
+	}
+
+	.NavMenu a:hover {
+		color: #163759;
+	}
+
+	.Menu_additional {
+		display: flex;
+		background-color: #16375916;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.Menu_additional li a {
+		font-size: 1.3rem;
+		color: #d4e7efbe;
+		transition: color 0.2s;
+	}
+	.Menu_additional li a:hover {
+		color: #d4e7ef;
+	}
+	.Menu_additional li {
+		display: flex;
+		flex-grow: 1;
+		width: auto;
+		justify-content: center;
+	}
+	.diver_lovers {
+		background: #177fcf;
+		background: linear-gradient(to left, #177fcf 0%, #ff0000 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+		text-align: center;
+	}
+	.luxury_gradient {
+		background: #f5dc38;
+		background: linear-gradient(to right, #f5dc38 10%, #cf3a0c 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+	}
+	.all_watches_menuItem {
+		width: 100%;
+		text-align: center;
+		font-weight: 600;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		background-color: #16375916;
+	}
+	.closeIcon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 14px;
+		font-size: 1.8rem;
+		color: #ffffff;
+		border: solid 2px #ffffff;
+		border-radius: 10px;
+	}
+	.close_menu {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+	}
+	.NavUl_notDesktop {
+		display: flex;
+		align-items: center;
+	}
+	.NavUl li a i {
+		font-size: 1.8rem;
+	}
+	.bag-shopping_i {
+		margin-right: 0;
+	}
+	.main_photo_text {
+		background-color: rgba(0, 0, 0, 0.377);
+		padding: 50px;
+		border-radius: 30px;
+	}
+	.mainPhoto {
+		justify-content: flex-start;
+		margin-top: 10px;
+		height: calc(100vh - 97px);
+	}
+	.main_photo_text {
+		background-color: transparent;
+		margin: 0;
+	}
+
+	.main_photo_text h1 {
+		font-size: 5rem;
+	}
+
+	.main_photo_text h2 {
+		font-size: 0.8rem;
+		width: 353px;
+	}
+	.MainDiv {
+		width: 100%;
+	}
+}
+
+@media (min-width: 475px) and (max-width: 760px) {
+	.search_bar_form {
+		display: flex;
+		width: 100%;
+		margin: 30px 25px 0 25px;
+	}
+	.form_on_off_1 {
+		display: none;
+	}
+	.form_on_off_2 {
+		display: flex !important;
+	}
+	.fa-lightbulb {
+		margin-left: 28px;
+	}
+	.menu_btn {
+		margin-right: 13px !important;
+	}
+	.btn {
+		display: inline;
+	}
+	.mainPhoto {
+		margin-top: -70px;
+		z-index: -5;
+	}
+	.mainPhoto::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100px;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.487) 0%, transparent 100%);
+	}
+	.main_photo_text {
+		background-color: transparent;
+		margin: 0;
+	}
+
+	.main_photo_text h1 {
+		font-size: 5rem;
+	}
+
+	.main_photo_text h2 {
+		font-size: 0.8rem;
+		width: 353px;
+	}
+
+	.best_watches_band h1 {
+		font-size: 1.2rem;
+	}
+
+	.watch_band_list li a img {
+		width: auto;
+		height: 70px;
+	}
+}
+
+@media (max-width: 475px) {
+	.search_bar_form {
+		margin: 20px 10px 0 10px;
+	}
+	.main_photo_text {
+		padding: 0px;
+	}
+	.nav_logo_img img {
+		margin-left: 10px;
+	}
+	.search_bar_form {
+		display: flex;
+		width: 100%;
+		margin: 28px 10px 0 10px;
+	}
+	.form_on_off_1 {
+		display: none;
+	}
+	.form_on_off_2 {
+		display: flex !important;
+	}
+	.nav_logo_img {
+		width: 100%;
+		background-color: #d4e7ef;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	.nav_logo_img img {
+		margin: 0;
+	}
+	.nav_logo_img img:hover {
+		transform: scale(1);
+	}
+	.span_nav_logo {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.btn {
+		display: inline;
+	}
+	.fa-lightbulb {
+		margin-left: 12px;
+	}
+	.NavMenu ul li a {
+		font-size: 1rem;
+	}
+	.NavMenu a {
+		font-size: 1.1rem;
+		padding: 15px;
+	}
+	.mainPhoto {
+		justify-content: center;
+		margin-top: 33px;
+		z-index: -5;
+		height: calc(100vh - 260px);
+	}
+	.main_photo_text {
+		text-align: center;
+	}
+
+	.main_photo_text h1 {
+		font-size: 4rem;
+	}
+	nav {
+		box-shadow: 0px 20px 20px 20px #ffffff47;
+	}
+
+	.watch_band_list li a img {
+		width: auto;
+		height: 70px;
+		margin: 4px -2px 0px 0px;
+		border-radius: 0;
+	}
+	.watch_band_list li a img:hover {
+		border-radius: 5px;
+	}
+}
+
+/* DODATKOWE ----------------------------------------- */
+@media (min-height: 1400px) and (min-width: 3000px) {
+	.mainPhoto {
+		height: calc(85vh - 257px);
+	}
+}
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+	.main_photo_text {
+		background-color: rgba(0, 0, 0, 0.377);
+		padding: 50px;
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 365px) {
+	.main_photo_text h1 {
+		font-size: 3.5rem;
+	}
+	.main_photo_text h2 {
+		width: 250px;
+	}
+}
+
+@media (max-width: 435px) {
+	.watch_band_list li a img {
+		width: auto;
+		height: 60px;
+	}
+}
