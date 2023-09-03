@@ -236,7 +236,8 @@ main {
 
 .MainDiv {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	width: 1300px;
 	margin-top: 140px;
 }
@@ -246,7 +247,6 @@ main {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-bottom: 400px;
 }
 
 .best_watches_band h1 {
@@ -278,6 +278,78 @@ main {
 	box-shadow: rgba(50, 50, 105, 0.061) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
+}
+
+.countries_watchs_list {
+	width: 100%;
+	font-size: 0.9rem;
+	line-height: 20px;
+	color: rgb(114, 114, 114);
+	transition: 0.2s;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.countries_watchs_list:hover {
+	color: #163759;
+}
+
+.countries_watchs_list_1 {
+	width: 100%;
+	margin-top: 140px;
+}
+
+.countries_watchs_list_1 h2 {
+	width: 550px;
+	background-color: #ffffff;
+	color: rgb(44, 44, 44);
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 70px;
+	text-shadow: 1px 2px 5px rgb(66 68 90 / 19%);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swissH2 {
+	background-color: #52525260;
+	width: 100%;
+	height: 2px;
+	margin-top: -80px;
+	position: relative;
+	z-index: -20;
+	margin-bottom: 100px;
+}
+
+.sec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiss_watches_sec {
+	height: 304px;
+	width: 635px;
+	background-color: #52525208;
+	border-radius: 15px;
+	margin-bottom: 40px;
+}
+
+.swiss_watches_sec h3 {
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #163759;
+	padding: 30px;
+	background-color: #d4e7ef;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.swiss_watches_text {
+	word-break: keep-all;
+	padding: 23px;
 }
 
 /*----------------------------------------------- */
@@ -374,6 +446,10 @@ main {
 	}
 	.MainDiv {
 		width: 1000px;
+	}
+	.swiss_watches_sec {
+		height: 358px;
+		width: 487px;
 	}
 }
 
@@ -577,6 +653,21 @@ main {
 	.MainDiv {
 		width: 100%;
 	}
+
+	.countries_watchs_list {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+	.swiss_watches_text {
+		width: 85%;
+		text-align: justify;
+		word-break: keep-all;
+	}
+	.swiss_watches_sec {
+		height: 280px;
+		width: 100%;
+	}
 }
 
 @media (min-width: 475px) and (max-width: 760px) {
@@ -634,6 +725,32 @@ main {
 	.watch_band_list li a img {
 		width: auto;
 		height: 70px;
+	}
+	.swiss_watches_sec h3 {
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 26px;
+	}
+
+	.countries_watchs_list {
+		width: 90%;
+		font-size: 0.7rem;
+	}
+	.countries_watchs_list_1 h2 {
+		width: 100%;
+		background-color: #ffffff00;
+		color: rgb(44, 44, 44);
+		text-align: center;
+		font-size: 1.3rem;
+	}
+	.swiss_watches_sec {
+		height: auto;
+		width: 100%;
+	}
+	.countries_watchs_list_1 h2 {
+		width: 400px;
+		background-color: #ffffff;
+		font-size: 1.3rem;
 	}
 }
 
@@ -715,6 +832,24 @@ main {
 	.watch_band_list li a img:hover {
 		border-radius: 5px;
 	}
+	.swiss_watches_sec {
+		height: auto;
+		width: 100%;
+	}
+	.swissH2 {
+		display: none;
+	}
+	.countries_watchs_list_1 h2 {
+		width: auto;
+		font-size: 1.3rem;
+	}
+	.swiss_watches_sec h3 {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+	.countries_watchs_list {
+		font-size: 0.8rem;
+	}
 }
 
 /* DODATKOWE ----------------------------------------- */
@@ -745,5 +880,11 @@ main {
 	.watch_band_list li a img {
 		width: auto;
 		height: 60px;
+	}
+}
+
+@media (max-width: 375px) {
+	.countries_watchs_list {
+		width: 100%;
 	}
 }
